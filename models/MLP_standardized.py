@@ -30,7 +30,7 @@ def run_mlp(X_train, y_train, X_test, y_test, dataset_type="RAW"):
 
     # GridSearchCV
     param_grid = {
-        'mlp__hidden_layer_sizes': [(64, 32), (128, 64)],
+        'mlp__hidden_layer_sizes': [(512, 256)],
         'mlp__alpha': [0.0001, 0.001],
         'mlp__learning_rate_init': [0.001, 0.01]
     }
